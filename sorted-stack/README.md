@@ -18,21 +18,13 @@ Stos może być zaimplementowany:
 - 🔹 jako tablica o stałej wielkości (z rzutowaniem typu)
 - 🔹 lub jako dynamiczna lista (`ArrayList<T>`)
 
-Wykorzystaj wzorzec _fabryki_ i zaimplementuj klasę `StackFactory`, która będzie odpowiedzialna za tworzenie instancji stosu. Przykład:
-
-```java
-public class StackFactory {
-    public static <T> Stack<T> createStack() {
-        return new StackImpl<T>(); // lub inna implementacja
-    }
-}
-```
+Wykorzystaj wzorzec _fabryki_ i zaimplementuj klasę `StackFactory`, która będzie odpowiedzialna za tworzenie instancji stosu.
 
 ### ✅ Testy jednostkowe
 Zaimplementuj testy jednostkowe dla klasy Stack<T> z użyciem JUnit 5. Przykładowe przypadki testowe:
 - dodanie i usunięcie elementu
 - sprawdzenie poprawności metody `peek()`
-- obsługa pustego stosu
+- obsługa pustego stosu `assertThrows`
 - poprawna liczba elementów po operacjach
 - działanie stosu z różnymi typami (`Integer`, `String`, `CustomObject`)
 
