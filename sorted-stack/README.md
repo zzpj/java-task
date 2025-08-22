@@ -28,7 +28,7 @@ Zaimplementuj testy jednostkowe dla klasy Stack<T> z użyciem JUnit 5. Przykład
 - poprawna liczba elementów po operacjach
 - działanie stosu z różnymi typami (`Integer`, `String`, `CustomObject`)
 
-### 🎯 Cel:
+### 🎯 Cel
 - Poznaj działanie stosu jako struktury LIFO (Last In, First Out)
 - Naucz się implementować generyczne klasy w Javie
 - Zastosuj wzorzec projektowy fabryki dla lepszej elastyczności kodu
@@ -51,7 +51,7 @@ która:
 - sortuje je według podanego komparatora (Comparator<T>),
 - umieszcza je z powrotem na stosie w kolejności posortowanej (najmniejszy na górze).
 
-### 🎯 Cel dydaktyczny
+### 🎯 Cel
 - Zrozumienie, jak manipulować strukturami danych przy użyciu komparatorów
 - Praktyka przekształcania stosu w listę i z powrotem
 - Utrwalenie pracy z generykami i interfejsem Comparator<T>
