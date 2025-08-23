@@ -24,4 +24,3 @@ public class UserController {
         return HttpStatus.METHOD_NOT_ALLOWED;
     }
 }
-

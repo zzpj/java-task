@@ -23,6 +23,4 @@ public class UserService {
     }
 
 }
-    /**
-     * Zadanie nr 1: Zwraca wszystkich użytkowników z bazy w formie mapy: ROLA -> lista UserResponse
-     */
+

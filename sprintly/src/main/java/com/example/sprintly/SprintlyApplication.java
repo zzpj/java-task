@@ -1,6 +1,7 @@
 package com.example.sprintly;
 
 import com.example.sprintly.model.User;
+import com.example.sprintly.model.UserRole;
 import com.example.sprintly.service.UserService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -22,35 +23,35 @@ public class SprintlyApplication {
 			User user1 = User.builder()
 					.name("Jan Kowalski")
 					.email("jan.kowalski@example.com")
-					.role("USER")
+					.role(UserRole.USER)
 					.password("haslo123")
 					.build();
 
 			User user2 = User.builder()
 					.name("Anna Nowak")
 					.email("anna.nowak@example.com")
-					.role("ADMIN")
+					.role(UserRole.ADMIN)
 					.password("haslo456")
 					.build();
 
 			User user3 = User.builder()
 					.name("Piotr Zielinski")
 					.email("piotr.zielinski@example.com")
-					.role("USER")
+					.role(UserRole.USER)
 					.password("haslo789")
 					.build();
 
 			User user4 = User.builder()
 					.name("Katarzyna Wójcik")
 					.email("katarzyna.wojcik@example.com")
-					.role("USER")
+					.role(UserRole.USER)
 					.password("haslo321")
 					.build();
 
 			User user5 = User.builder()
 					.name("Marek Lewandowski")
 					.email("marek.lewandowski@example.com")
-					.role("ADMIN")
+					.role(UserRole.ADMIN)
 					.password("haslo654")
 					.build();
 
