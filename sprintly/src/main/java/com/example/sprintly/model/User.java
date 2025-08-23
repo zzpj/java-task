@@ -20,6 +20,7 @@ public class User {
     @Column(unique = true, nullable = false)
     private String email;
 
+    @Enumerated(EnumType.STRING)
     private UserRole role;
 
     private String password;

@@ -21,12 +21,12 @@ dlatego mapuj encję `User` na `UserMapResponse`.
 
 Stwórz endpoint umożliwiający utworzenie nowego projektu. Dostęp do tej funkcjonalności powinien mieć wyłącznie użytkownik posiadający rolę `ADMIN` 👮‍♂️.
 
-🛡️ Wymagania:
+### 🛡️ Wymagania:
 - Jeśli użytkownik nie posiada odpowiedniej roli, zwróć status HTTP 403 Forbidden 🚫 (stwórz własny wyjątek).
 - Pamiętaj o dobrych praktykach związanych z bezpieczeństwem i walidacją danych wejściowych.
 - Tworzony projekt nie musi posiadać żadnych zadań (tasks)
 
-Przykład:
+### Przykład:
 - Użytkownik z rolą `ADMIN` wysyła żądanie utworzenia projektu i projekt zostaje utworzony ze statusem HTTP 201 Created ✅.
 - Użytkownik bez roli `ADMIN` wysyła żądanie utworzenia projektu i odpowiedź HTTP 403 Forbidden 🚫.
 
@@ -34,4 +34,8 @@ Przykład:
 
 Zaimplementuj endpoint, który pozwala na zmianę statusu zadania (task) w projekcie, ale tylko osobie przypisanej do tego zadania (assignee) 🧑‍💻.
 
-TODO: security, walidacja danych
+TODO: 
+- security, 
+- walidacja danych o to ze task musi byc w projekcie ale moze byc nieprzypisany i jego name/tytuł musi miec 5 znaków minumum, 
+  - uzyc do cmdlinerunnera do stworzenia testowych danych w postaci taska/ów/projektów/uzytkowników
+- stworzyc wlasny wyjatek do 403 forbidden <- inwestygacja jak to zrobic najprościej
