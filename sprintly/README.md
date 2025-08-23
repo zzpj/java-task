@@ -14,8 +14,7 @@ Przykład zwracanej struktury:
 ```
 
 ### 🔒 Wskazówka:
-W podanej strukturze pamiętaj, aby nie publikować wrażliwych danych np. haseł użytkowników, 
-dlatego mapuj encję `User` na `UserMapResponse`. 
+W podanej strukturze pamiętaj, aby nie publikować wrażliwych danych np. haseł użytkowników, dlatego mapuj encję `User` na `UserResponse`. 
 
 ## Zadanie 2 🚀
 

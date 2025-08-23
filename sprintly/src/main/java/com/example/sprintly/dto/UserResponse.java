@@ -3,5 +3,5 @@ package com.example.sprintly.dto;
 import lombok.Data;
 
 @Data
-public class UserMapResponse {
+public class UserResponse {
 }
