@@ -32,9 +32,12 @@ Stwórz endpoint umożliwiający utworzenie nowego projektu. Dostęp do tej funk
 ## Zadanie 3 🚀
 
 Zaimplementuj endpoint, który pozwala na zmianę statusu zadania (task) w projekcie, ale tylko osobie przypisanej do tego zadania (assignee) 🧑‍💻.
+Do tego celu użyj zapytania typu `PATCH` i przekaż w ciele żądania nowy status zadania.
+Działanie tego end-pointu uzależnij od wartości przypisanej w property `application.properties`:
 
-TODO: 
-- security, 
-- walidacja danych o to ze task musi byc w projekcie ale moze byc nieprzypisany i jego name/tytuł musi miec 5 znaków minumum, 
-  - uzyc do cmdlinerunnera do stworzenia testowych danych w postaci taska/ów/projektów/uzytkowników
-- stworzyc wlasny wyjatek do 403 forbidden <- inwestygacja jak to zrobic najprościej
+```properties
+task.status.change.allowed=true
+```
+
+Możesz użyć do `CommandLineRunner` do stworzenia testowych danych w postaci taska'ów, projektów oraz użytkowników
+

@@ -12,12 +12,3 @@ i wpisać w JDBC URL z logów: `jdbc:h2:mem:<wziąć_z_logów>`
 
 ## Swagger
 Swagger URL: http://localhost:8080/swagger-ui/index.html
-
-## Spring Security
-Use later:
-```yaml
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
-```
